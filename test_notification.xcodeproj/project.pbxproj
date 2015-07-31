@@ -13,6 +13,10 @@
 		C1C63E651B6765D000F0D13E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1C63E641B6765D000F0D13E /* Images.xcassets */; };
 		C1C63E681B6765D000F0D13E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1C63E661B6765D000F0D13E /* LaunchScreen.xib */; };
 		C1C63E741B6765D000F0D13E /* test_notificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C63E731B6765D000F0D13E /* test_notificationTests.swift */; };
+		C1C63E7F1B678A1C00F0D13E /* Anowl_demo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C1C63E7E1B678A1C00F0D13E /* Anowl_demo.mp3 */; };
+		C1C63E811B6B005500F0D13E /* out.caff in Resources */ = {isa = PBXBuildFile; fileRef = C1C63E801B6B005400F0D13E /* out.caff */; };
+		C1C63E831B6B0A9800F0D13E /* 18am13.wav in Resources */ = {isa = PBXBuildFile; fileRef = C1C63E821B6B0A9800F0D13E /* 18am13.wav */; };
+		C1C63E851B6B0AA700F0D13E /* Pong-90dB.caf in Resources */ = {isa = PBXBuildFile; fileRef = C1C63E841B6B0AA700F0D13E /* Pong-90dB.caf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		C1C63E6D1B6765D000F0D13E /* test_notificationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = test_notificationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1C63E721B6765D000F0D13E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1C63E731B6765D000F0D13E /* test_notificationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test_notificationTests.swift; sourceTree = "<group>"; };
+		C1C63E7E1B678A1C00F0D13E /* Anowl_demo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Anowl_demo.mp3; sourceTree = "<group>"; };
+		C1C63E801B6B005400F0D13E /* out.caff */ = {isa = PBXFileReference; lastKnownFileType = file; path = out.caff; sourceTree = "<group>"; };
+		C1C63E821B6B0A9800F0D13E /* 18am13.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 18am13.wav; sourceTree = "<group>"; };
+		C1C63E841B6B0AA700F0D13E /* Pong-90dB.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pong-90dB.caf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +85,11 @@
 		C1C63E5A1B6765D000F0D13E /* test_notification */ = {
 			isa = PBXGroup;
 			children = (
+				C1C63E801B6B005400F0D13E /* out.caff */,
+				C1C63E821B6B0A9800F0D13E /* 18am13.wav */,
+				C1C63E841B6B0AA700F0D13E /* Pong-90dB.caf */,
+				C1C63E7E1B678A1C00F0D13E /* Anowl_demo.mp3 */,
+				C1C63E7D1B6789CD00F0D13E /* sound */,
 				C1C63E5D1B6765D000F0D13E /* AppDelegate.swift */,
 				C1C63E5F1B6765D000F0D13E /* ViewController.swift */,
 				C1C63E611B6765D000F0D13E /* Main.storyboard */,
@@ -110,6 +123,13 @@
 				C1C63E721B6765D000F0D13E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C1C63E7D1B6789CD00F0D13E /* sound */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = sound;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +181,7 @@
 				TargetAttributes = {
 					C1C63E571B6765D000F0D13E = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = DS64LC74E4;
 					};
 					C1C63E6C1B6765D000F0D13E = {
 						CreatedOnToolsVersion = 6.4;
@@ -192,9 +213,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1C63E811B6B005500F0D13E /* out.caff in Resources */,
 				C1C63E631B6765D000F0D13E /* Main.storyboard in Resources */,
+				C1C63E7F1B678A1C00F0D13E /* Anowl_demo.mp3 in Resources */,
 				C1C63E681B6765D000F0D13E /* LaunchScreen.xib in Resources */,
 				C1C63E651B6765D000F0D13E /* Images.xcassets in Resources */,
+				C1C63E851B6B0AA700F0D13E /* Pong-90dB.caf in Resources */,
+				C1C63E831B6B0A9800F0D13E /* 18am13.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +316,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -329,7 +354,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -340,9 +365,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = test_notification/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -350,9 +378,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = test_notification/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -409,6 +440,7 @@
 				C1C63E791B6765D000F0D13E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C1C63E7A1B6765D000F0D13E /* Build configuration list for PBXNativeTarget "test_notificationTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +449,7 @@
 				C1C63E7C1B6765D000F0D13E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

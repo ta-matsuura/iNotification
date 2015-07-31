@@ -16,7 +16,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //Notification登録前のおまじない。これがないとpermissionエラーが発生するので必要です。
+        application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: UIUserNotificationType.Sound | UIUserNotificationType.Alert | UIUserNotificationType.Badge, categories: nil))
+        
+        
         return true
+    }
+    
+
+    //上記のNotificatioを５秒後に受け取る関数
+    func application(application: UIApplication, didReceiveLocalNotification notification: UILocalNotification) {
+        
+        var alert = UIAlertView();
+        alert.title = "受け取りました";
+        alert.message = notification.alertBody;
+        alert.addButtonWithTitle(notification.alertAction!);
+        alert.show();
+        
     }
 
     func applicationWillResignActive(application: UIApplication) {
